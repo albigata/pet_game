@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssbattle2</title>
+</head>
+<body>
+    <div class='scr'>
+        <div class='wnd1'></div>
+        <div class='wnd2'>
+            <div class='crcl'></div>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .scr {
+            width: 400px;
+            height: 300px;
+            background: #191919;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wnd1 {
+            width: 150px;
+            height: 200px;
+            background: radial-gradient(circle farthest-side at 100% 100%, #824B20 50%, transparent 50%), radial-gradient(circle farthest-side at 0% 100%, #E08027 50%, transparent 50%);
+            border-radius: 75px 75px 20px 20px; 
+            position: absolute;
+        }
+
+        .wnd2 {
+            width: 150px;
+            height: 200px;
+            background: #F2AD43;
+            border-radius: 75px 75px 20px 20px; 
+        }
+
+        .crcl {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #FFF58F;
+            margin: 60% auto;
+        }
+    </style>
+</body>
+</html>

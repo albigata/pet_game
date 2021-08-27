@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cssbattle1</title>
+</head>
+
+<body>
+
+  <div class="scr">
+    <div class="tri"></div>
+    <div class="bsq">
+      <div class="win"></div>
+      <div class="ssq"></div>
+    </div>
+  </div>
+
+  <style>
+
+    body {
+      margin: 0;
+    }
+
+    .scr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 300px;
+      background: #6592cf;
+    }
+
+    .tri {
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 100px solid #243d83;
+    }
+
+    .bsq {
+      width: 150px;
+      height: 100px;
+      background: #243d83;
+      border-radius: 0 0 10px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .win {
+      width: 100px;
+      height: 10px;
+      border-radius: 5px;
+      background: #eeb850;
+      margin-top: -5px;
+    }
+
+    .ssq {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px 10px 0 0;
+      background: #eeb850;
+    }
+  </style>
+
+</body>
+
+</html>

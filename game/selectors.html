@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim training</title>
+    <link rel="stylesheet" href="./selectors.css">
+</head>
+<body>
+    <div class="screen">
+        <h1>AIM TRAINING</h1>
+        <a href="#" class="screen__start" id="start">НАЧАТЬ ИГРУ</a>
+    </div>
+    <div class="screen">
+        <h1>ВЫБЕРИТЕ ВРЕМЯ</h1>
+        <ul class="screen__time-list">
+            <li>
+                <button class="time-list__button" data-time="10">10 СЕК</button>
+            </li>
+            <li>
+                <button class="time-list__button" data-time="20">20 СЕК</button>
+            </li>
+            <li>
+                <button class="time-list__button" data-time="30">30 СЕК</button>
+            </li>
+        </ul>
+    </div>
+   <div class="screen">
+        <h3>Осталось <span id="time">00:00</span></h3>
+        <div class="screen__board" id="board">
+            <div class="screen__board_score">
+                <h1>Счет: <span class="primary" id="score"></span></h1>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

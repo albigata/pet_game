@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00C9B7;
+    border: 2px solid #00C9B7
+}
+
+h1 {
+    line-height: 1.4;
+    font-size: 4rem;
+}
+
+.screen__start {
+    font-size: 1.8rem;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;    
+    background: linear-gradient(to right, #02112d, #072646, #0c3b60, #10537a, #126b95);
+    transition: margin 0.5s ease-out;
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.screen__time-list li{
+    margin: 20px;
+}
+
+.screen__time-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.time-list__button {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    font-family: inherit;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .4);
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.time-list__button:before,
+.time-list__button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+.time-list__button:before {
+    bottom: 0;
+    left: 0;
+    border-left: 2px solid #00C9B7;
+    border-top: 2px solid #00C9B7;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.time-list__button:after {
+    top: 0;
+    right: 0;
+    border-right: 2px solid #00C9B7;
+    border-bottom: 2px solid #00C9B7;
+    transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.time-list__button:hover:before,
+.time-list__button:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.time-list__button:hover:before {
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.time-list__button:hover:after {
+    transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.time-list__button:hover {
+    background: rgba(0, 201, 183, .2);
+}
+
+.hide {
+    opacity: 0;
+}
+
+.primary {
+    color: #00C9B7;
+}
+
+.screen__board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #0c3b60;
+    box-shadow: 5px 5px 14px 1px rgba(0, 0, 0, .2);
+}
+
+.circle {
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+}
+
+a[href="#"] {
+    border: 1px solid transparent;
+    padding: 1rem;
+}
+
+a[href="#"]:hover {
+    border: 1px solid #00C9B7;
+}
+
+.screen__board_score {
+    opacity: 0;
+}
+
+.score {
+    opacity: 1;
+}
