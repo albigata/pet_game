@@ -1,0 +1,67 @@
+body {
+    background-color:rgb(32, 37, 37);
+    color:honeydew;
+    font-family: sans-serif;
+    font-size: 9px;
+    border: 1px solid rgb(102, 163, 102);
+}
+.def {
+    border: inherit;
+    padding: 5px;
+}
+.def2 {
+    font-size: initial;
+}
+span {
+    border: 3px dashed brown;
+}
+.def2 span {
+    border: unset;
+}
+.class1 {
+    background-color: darkslateblue;
+    font-size: 18px;
+}
+.content {
+    background-color: darkslategrey;
+    font-size: 9px;
+}
+.secondary {
+    font-size: 30px;
+}
+#id1{
+    font-size: 20px;
+}
+.secondary p {
+    font-size: 10px;
+    color: darkturquoise;
+}
+#id2{
+    font-size: 30px;
+    color: darkorchid;
+}
+#pagewrapper{
+    font-size: 20px;
+}
+#pagewrapper>.content{
+    border: 4px double white !important;
+}
+#pagewrapper .content{
+    border: 4px double green;
+
+}
+.col {
+    font-size: 25px;
+    color: cornflowerblue;
+}
+div.col p {
+    text-decoration: line-through;
+}
+div:not(.col) p {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 2px red, 4px 4px 2px red;
+}
+ 
