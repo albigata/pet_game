@@ -54,12 +54,12 @@ board.addEventListener('click', (event) => {
 
 function finishGame() {
     timeEl.parentNode.classList.add('hide');
-    const circle=document.querySelector('.circle');
-    circle.classList.add('hide');
     bscore.classList.add('score');
     scoreEl.innerHTML=`${score}`;
     clearInterval(timerId);
     clearInterval(timerIdGodMode);
+    const circle=document.querySelector('.circle');
+    circle.classList.add('hide');
 }
 
 function setTime(value) {
